@@ -4,35 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu principal</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/div.css">
+    <link rel="stylesheet" type="text/css" href="css/logo.css">
+
 </head>
 
 <body>
-    <header>
-        <img src="assets/logo_nova.jpg" alt="Logo da Titan Fitness" height="300" width="600">
-        <h1>Titan Fitness</h1>
-        <p>A Titan Fitness é mais do que uma academia, é um estilo de vida! Nosso espaço foi projetado para oferecer o melhor em musculação, treinamento funcional e aulas dinâmicas para todos os níveis. Com equipamentos de última geração e uma equipe de profissionais dedicados, ajudamos você a alcançar seus objetivos com saúde e eficiência.</p>
-        <img src="assets/foto_academia.jpg" alt="Imagem da academia" height="300" width="500">
-    </header>
+    <header class="header">
 
+<!-- div0 - Menu do site -->
+    <div class="div0">
         <nav>
             <ul>
+                <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="funcional.html">Treino Funcional</a></li>
-                <p>Melhore sua força, resistência e flexibilidade com exercícios dinâmicos adaptáveis a todos os níveis. Junte-se a nós e comece sua transformação hoje!</p>
                 <li><a href="jiu.html">Jiu-Jitsu</a></li>
-                <p>Ganhe força, flexibilidade e autoconfiança com o jiu-jitsu. Comece sua jornada conosco!</p>
                 <li><a href="musculação.html">Musculação</a></li>
-                <p>Transforme seu corpo com treinos personalizados e alcance seus objetivos com força e saúde!</p>
                 <li><a href="Natação.html">Natação</a></li>
-                <p>Melhore sua saúde cardiovascular, força e resistência com a natação. Venha praticar conosco!</p>
                 <li><a href="Spinning.html">Spinning</a></li>
-                <p>Participe de aulas intensas de Spinning, que melhoram o condicionamento físico e ajudam a queimar calorias!</p>
             </ul>
         </nav>
+    </div>
+
+<!-- div1 - Titulo Principal e Logo-->
+    <div class="div1">
+    <img src="assets/logo_nova.jpg" alt="Logo da Titan Fitness">
+    </div>
+
+<!-- div2 Descrição e Imagens da Academia-->
+        <div class="Descrição Academia">
+        <p>A Titan Fitness é mais do que uma academia, é um estilo de vida! Nosso espaço foi projetado para oferecer o melhor em musculação, treinamento funcional e aulas dinâmicas para todos os níveis. Com equipamentos de última geração e uma equipe de profissionais dedicados, ajudamos você a alcançar seus objetivos com saúde e eficiência.</p>
+       <div class="ImagensAcademia">
+                <img src="assets/academia-imagem 1.png" alt="Imagem da academia">
+          
+                <img src="assets/academia-imagem 3.png" alt="Imagem da academia 3">
+           
+                <img src="assets/academia-imagem 2.png" alt="'Imagem da academia 2">
+           
+        </div>
+        </div>
+    </header>
 
     <main>
         <h2>Cadastre-se para receber atualizações</h2>
         <form method="POST" class="formCreate">
-            <label for="email">E-mail</label>
+            <label id="form" for="email">E-mail</label>
             <input type="email" placeholder="Digite seu e-mail" autofocus="true" required/><br>
             <label for="name">Nome</label>
             <input type="name" placeholder="Digite seu nome" autofocus="true" required/><br>

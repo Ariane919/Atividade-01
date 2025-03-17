@@ -1,0 +1,38 @@
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 75%;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #DCDDDF
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+
+}
+
+.header nav ul li a {
+    padding: 20px;
+    text-decoration: none;
+    color: #051F44;
+    font-size: 15px;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+.header nav ul li a:hover {
+    background-color: #f7f6f6;
+    width: 50%;
+}
