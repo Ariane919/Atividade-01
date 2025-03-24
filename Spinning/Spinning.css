@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;400;500;600;700;800;900 & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+
+}
+
+body{
+    background-color: #DCDDDF
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .navigation a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+    font-size: 19px;
+}
+
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+header .navigation a:hover{
+    background-color: #fff;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+  }
+    
+  .hero-section .text {
+    flex: 5;
+  }
+    
+  .hero-section .text p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .hero-section .text h2 {
+    font-size: 45px;
+  }
+    
+  .hero-section .text .links {
+    margin-top: 25px;
+  }
+    
+  .hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+    
+  .hero-section .text .links a:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid var(--text-color);
+  
+  }
+    
+  .hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+  }
+    
+  .hero-section .headshot img {
+    width: 500px;
+    border-radius: 10%;
+  }
+    
+  
+  .Habilidades-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+    
+  .Habilidades-section h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+    
+  .Habilidades-section .text {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 35px;
+  }
+    
+  footer{
+    padding-top: 50px;
+  }
+  .container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-content{
+    width: 33.3%;
+  }
+  h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+  }
+  .footer-content ul{
+    text-align: center;
+  }
+  .list{
+    padding: 0;
+  }
+  .list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+  }
+  .list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition-duration: .5s;
+  }
+  .list li:hover::before{
+    width: 70px;
+  }
+  .social-icons{
+    text-align: center;
+    padding: 0;
+  }
+  .social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+  .social-icons i{
+    color: black;
+    font-size: 25px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #fff;
+  }
+  .social-icons i:hover{
+    color: #fff;
+  }
+  .bottom-bar{
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+  .bottom-bar p{
+    color: black;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+    font-weight: 600;
+  }
+  
+  /* Responsividade */
+@media (max-width: 768px) {
+  header {
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  header .navigation a {
+      margin: 5px 0;
+  }
+
+  .container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .footer-content {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+}
